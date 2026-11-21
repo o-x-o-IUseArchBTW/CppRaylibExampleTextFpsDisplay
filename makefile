@@ -4,7 +4,7 @@ WindowsInstallUrl:
 	@echo https://raysan5.itch.io/raylib
 	@echo just click link download and run, USE DEFAULT PATH OR THE OTHER WINDOWS COMMANDS WONT WORK!
 Linux:
-	@g++ Main.cpp -o game $(pkg-config --cflags --libs raylib)
+	@g++ Main.cpp -lraylib -o game 
 LinuxInstallCommands:
 	@echo Arch: sudo pacman -S gcc raylib pkgconf
 	@echo Debian/Ubuntu: sudo apt install g++ libraylib-dev pkg-config
