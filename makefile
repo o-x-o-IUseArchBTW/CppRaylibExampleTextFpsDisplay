@@ -6,7 +6,7 @@ WindowsInstallUrl:
 Linux:
 	@g++ Main.cpp -o game $(pkg-config --cflags --libs raylib)
 LinuxInstallCommands:
-	@echo Arch:s udo pacman -S gcc raylib pkgconf
+	@echo Arch: sudo pacman -S gcc raylib pkgconf
 	@echo Debian/Ubuntu: sudo apt install g++ libraylib-dev pkg-config
 	@echo Fedora: sudo dnf install gcc-c++ raylib-devel pkgconf-pkg-config
 	@echo Gentoo: sudo emerge dev-lang/gcc media-libs/raylib
